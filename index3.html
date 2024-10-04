@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета</title>
+    <style>
+        .form {
+            width: 40%;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset class="form">
+            Введите ФИО: <br>
+            <input type="text" placeholder="Введите ФИО" name="Имя" required> <br> <br>
+            Введите пароль: <br>
+            <input type="text" placeholder="Введите номер телефона" name="Телефон" minlength="6"> <br><br>
+            Какой диск вы хотите получить? <br><br>
+            <input type="radio" name="delivery"> CD <br>
+            <input type="radio" name="delivery"> DVD <br> <br>
+            Какие обучающие курсы вы хотите видеть на диске? <br><br>
+            <input type="checkbox" name="interes" value="фотошоп" id="photoshop"> <label for="фотошоп">Курсы по Фотошопу</label> <br>
+            <label><input type="checkbox" name="interes" value="Adobe Dreamweaver"> Курсы по Adobe Dreamweaver</label> <br>
+            <label><input type="checkbox" name="interes" value="PHP"> Курсы PHP</label> <br><br>
+            Выберите способ доставки: <br><br>
+            <select class="form" name="" id="">
+                <option selected disabled>Укажите способ доставки</option> 
+                    <option value="Курьером">Курьером</option>
+                    <option value="Пункт выдачи">Пункт выдачи</option> 
+            </select> <br> <br>
+            Введите адрес для доставки: <br><br>
+            <textarea class="form" name="comment"  cols="30" rows="5"></textarea> <br> <br>
+            <input type="submit">    
+            <button type="reset">Отмена</button>
+    </fieldset>
+</body>
+</html>
